@@ -106,7 +106,7 @@ static const CGFloat KMidViewWidthDefault = 60.0;
     }
     
     self.text = [NSString stringWithFormat:@"%@",@(self.stepperValue)];
-    [self callBackDelegate];
+    [self _callBackDelegate];
 }
 
 - (void)setFont:(UIFont *)font {
@@ -120,13 +120,13 @@ static const CGFloat KMidViewWidthDefault = 60.0;
     self.text = [NSString stringWithFormat:@"%@",@(self.stepperValue)];
 }
 
-- (void)callBackDelegate {
+- (void)_callBackDelegate {
     if (self.stepperDelegate && [self.stepperDelegate respondsToSelector:@selector(stepChanged:)]) {
         [self.stepperDelegate stepChanged:@(self.stepperValue)];
     }
 }
 
-- (BOOL)isValidTextFieldValue:(NSString *)valueString{
+- (BOOL)_isValidTextFieldValue:(NSString *)valueString{
     if ([valueString length] == 0) {
         return YES;
     }
@@ -141,14 +141,14 @@ static const CGFloat KMidViewWidthDefault = 60.0;
 
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
-    [self callBackDelegate];
+    [self _callBackDelegate];
 }
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
     
     NSString *text = textField.text;
     NSString *replacesString = [text stringByReplacingCharactersInRange:range withString:string];
-    BOOL validInput = [self isValidTextFieldValue:replacesString];
+    BOOL validInput = [self _isValidTextFieldValue:replacesString];
     if (!validInput) {
         return NO;
     }
