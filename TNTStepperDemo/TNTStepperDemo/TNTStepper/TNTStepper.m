@@ -61,7 +61,7 @@ static const CGFloat KMidViewWidthDefault = 60.0;
     [self.leftButton setFrame:CGRectMake(0, 0, self.buttonWidth, CGRectGetHeight(self.frame))];
     [self.leftButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self.leftButton setTitle:@"-" forState:UIControlStateNormal];
-    [self.leftButton addTarget:self action:@selector(_buttonAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self.leftButton addTarget:self action:@selector(p_buttonAction:) forControlEvents:UIControlEventTouchUpInside];
     self.leftButton.tag = 11;
     self.leftViewMode = UITextFieldViewModeAlways;
     self.leftView = self.leftButton;
@@ -70,7 +70,7 @@ static const CGFloat KMidViewWidthDefault = 60.0;
     [self.rightButton setFrame:CGRectMake(0, 0, self.buttonWidth, CGRectGetHeight(self.frame))];
     [self.rightButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self.rightButton setTitle:@"+" forState:UIControlStateNormal];
-    [self.rightButton addTarget:self action:@selector(_buttonAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self.rightButton addTarget:self action:@selector(p_buttonAction:) forControlEvents:UIControlEventTouchUpInside];
     self.rightButton.tag = 22;
     self.rightViewMode = UITextFieldViewModeAlways;
     self.rightView = self.rightButton;
@@ -92,7 +92,7 @@ static const CGFloat KMidViewWidthDefault = 60.0;
     self.textAlignment = NSTextAlignmentCenter;
 }
 
-- (void)_buttonAction:(UIButton *)sender {
+- (void)p_buttonAction:(UIButton *)sender {
     if (sender.tag == 11) {
         if (self.stepperValue == self.stepperValueMin) {
             return;
@@ -106,7 +106,7 @@ static const CGFloat KMidViewWidthDefault = 60.0;
     }
     
     self.text = [NSString stringWithFormat:@"%@",@(self.stepperValue)];
-    [self _callBackDelegate];
+    [self p_callBackDelegate];
 }
 
 - (void)setFont:(UIFont *)font {
@@ -120,13 +120,13 @@ static const CGFloat KMidViewWidthDefault = 60.0;
     self.text = [NSString stringWithFormat:@"%@",@(self.stepperValue)];
 }
 
-- (void)_callBackDelegate {
+- (void)p_callBackDelegate {
     if (self.stepperDelegate && [self.stepperDelegate respondsToSelector:@selector(stepChanged:)]) {
         [self.stepperDelegate stepChanged:@(self.stepperValue)];
     }
 }
 
-- (BOOL)_isValidTextFieldValue:(NSString *)valueString{
+- (BOOL)p_isValidTextFieldValue:(NSString *)valueString{
     if ([valueString length] == 0) {
         return YES;
     }
@@ -141,14 +141,14 @@ static const CGFloat KMidViewWidthDefault = 60.0;
 
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
-    [self _callBackDelegate];
+    [self p_callBackDelegate];
 }
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
     
     NSString *text = textField.text;
     NSString *replacesString = [text stringByReplacingCharactersInRange:range withString:string];
-    BOOL validInput = [self _isValidTextFieldValue:replacesString];
+    BOOL validInput = [self p_isValidTextFieldValue:replacesString];
     if (!validInput) {
         return NO;
     }
