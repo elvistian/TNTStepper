@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E856D5321C0D8284007F2E92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E856D5311C0D8284007F2E92 /* main.m */; };
+		E856D5351C0D8284007F2E92 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E856D5341C0D8284007F2E92 /* AppDelegate.m */; };
+		E856D5381C0D8284007F2E92 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E856D5371C0D8284007F2E92 /* ViewController.m */; };
+		E856D53B1C0D8284007F2E92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E856D5391C0D8284007F2E92 /* Main.storyboard */; };
+		E856D53D1C0D8284007F2E92 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E856D53C1C0D8284007F2E92 /* Images.xcassets */; };
+		E856D5401C0D8284007F2E92 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E856D53E1C0D8284007F2E92 /* LaunchScreen.xib */; };
+		E856D54C1C0D8284007F2E92 /* TNTStepperDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E856D54B1C0D8284007F2E92 /* TNTStepperDemoTests.m */; };
+		E856D55D1C0D82F0007F2E92 /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = E856D5571C0D82F0007F2E92 /* left.png */; };
+		E856D55F1C0D82F0007F2E92 /* mid.png in Resources */ = {isa = PBXBuildFile; fileRef = E856D5591C0D82F0007F2E92 /* mid.png */; };
+		E856D5601C0D82F0007F2E92 /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = E856D55A1C0D82F0007F2E92 /* right.png */; };
+		E856D5611C0D82F0007F2E92 /* TNTStepper.m in Sources */ = {isa = PBXBuildFile; fileRef = E856D55C1C0D82F0007F2E92 /* TNTStepper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E856D5461C0D8284007F2E92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E856D5241C0D8283007F2E92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E856D52B1C0D8284007F2E92;
+			remoteInfo = TNTStepperDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E856D52C1C0D8284007F2E92 /* TNTStepperDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TNTStepperDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E856D5301C0D8284007F2E92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E856D5311C0D8284007F2E92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E856D5331C0D8284007F2E92 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E856D5341C0D8284007F2E92 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E856D5361C0D8284007F2E92 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E856D5371C0D8284007F2E92 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E856D53A1C0D8284007F2E92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E856D53C1C0D8284007F2E92 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E856D53F1C0D8284007F2E92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E856D5451C0D8284007F2E92 /* TNTStepperDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TNTStepperDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E856D54A1C0D8284007F2E92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E856D54B1C0D8284007F2E92 /* TNTStepperDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNTStepperDemoTests.m; sourceTree = "<group>"; };
+		E856D5571C0D82F0007F2E92 /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left.png; sourceTree = "<group>"; };
+		E856D5591C0D82F0007F2E92 /* mid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mid.png; sourceTree = "<group>"; };
+		E856D55A1C0D82F0007F2E92 /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
+		E856D55B1C0D82F0007F2E92 /* TNTStepper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNTStepper.h; sourceTree = "<group>"; };
+		E856D55C1C0D82F0007F2E92 /* TNTStepper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNTStepper.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E856D5291C0D8284007F2E92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E856D5421C0D8284007F2E92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E856D5231C0D8283007F2E92 = {
+			isa = PBXGroup;
+			children = (
+				E856D52E1C0D8284007F2E92 /* TNTStepperDemo */,
+				E856D5481C0D8284007F2E92 /* TNTStepperDemoTests */,
+				E856D52D1C0D8284007F2E92 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E856D52D1C0D8284007F2E92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E856D52C1C0D8284007F2E92 /* TNTStepperDemo.app */,
+				E856D5451C0D8284007F2E92 /* TNTStepperDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E856D52E1C0D8284007F2E92 /* TNTStepperDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E856D5331C0D8284007F2E92 /* AppDelegate.h */,
+				E856D5341C0D8284007F2E92 /* AppDelegate.m */,
+				E856D5361C0D8284007F2E92 /* ViewController.h */,
+				E856D5371C0D8284007F2E92 /* ViewController.m */,
+				E856D5561C0D82F0007F2E92 /* TNTStepper */,
+				E856D5391C0D8284007F2E92 /* Main.storyboard */,
+				E856D53C1C0D8284007F2E92 /* Images.xcassets */,
+				E856D53E1C0D8284007F2E92 /* LaunchScreen.xib */,
+				E856D52F1C0D8284007F2E92 /* Supporting Files */,
+			);
+			path = TNTStepperDemo;
+			sourceTree = "<group>";
+		};
+		E856D52F1C0D8284007F2E92 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E856D5301C0D8284007F2E92 /* Info.plist */,
+				E856D5311C0D8284007F2E92 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E856D5481C0D8284007F2E92 /* TNTStepperDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E856D54B1C0D8284007F2E92 /* TNTStepperDemoTests.m */,
+				E856D5491C0D8284007F2E92 /* Supporting Files */,
+			);
+			path = TNTStepperDemoTests;
+			sourceTree = "<group>";
+		};
+		E856D5491C0D8284007F2E92 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E856D54A1C0D8284007F2E92 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E856D5561C0D82F0007F2E92 /* TNTStepper */ = {
+			isa = PBXGroup;
+			children = (
+				E856D5571C0D82F0007F2E92 /* left.png */,
+				E856D5591C0D82F0007F2E92 /* mid.png */,
+				E856D55A1C0D82F0007F2E92 /* right.png */,
+				E856D55B1C0D82F0007F2E92 /* TNTStepper.h */,
+				E856D55C1C0D82F0007F2E92 /* TNTStepper.m */,
+			);
+			path = TNTStepper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E856D52B1C0D8284007F2E92 /* TNTStepperDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E856D54F1C0D8284007F2E92 /* Build configuration list for PBXNativeTarget "TNTStepperDemo" */;
+			buildPhases = (
+				E856D5281C0D8284007F2E92 /* Sources */,
+				E856D5291C0D8284007F2E92 /* Frameworks */,
+				E856D52A1C0D8284007F2E92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TNTStepperDemo;
+			productName = TNTStepperDemo;
+			productReference = E856D52C1C0D8284007F2E92 /* TNTStepperDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E856D5441C0D8284007F2E92 /* TNTStepperDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E856D5521C0D8284007F2E92 /* Build configuration list for PBXNativeTarget "TNTStepperDemoTests" */;
+			buildPhases = (
+				E856D5411C0D8284007F2E92 /* Sources */,
+				E856D5421C0D8284007F2E92 /* Frameworks */,
+				E856D5431C0D8284007F2E92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E856D5471C0D8284007F2E92 /* PBXTargetDependency */,
+			);
+			name = TNTStepperDemoTests;
+			productName = TNTStepperDemoTests;
+			productReference = E856D5451C0D8284007F2E92 /* TNTStepperDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E856D5241C0D8283007F2E92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = ltbl;
+				TargetAttributes = {
+					E856D52B1C0D8284007F2E92 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					E856D5441C0D8284007F2E92 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = E856D52B1C0D8284007F2E92;
+					};
+				};
+			};
+			buildConfigurationList = E856D5271C0D8283007F2E92 /* Build configuration list for PBXProject "TNTStepperDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E856D5231C0D8283007F2E92;
+			productRefGroup = E856D52D1C0D8284007F2E92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E856D52B1C0D8284007F2E92 /* TNTStepperDemo */,
+				E856D5441C0D8284007F2E92 /* TNTStepperDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E856D52A1C0D8284007F2E92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E856D5601C0D82F0007F2E92 /* right.png in Resources */,
+				E856D55F1C0D82F0007F2E92 /* mid.png in Resources */,
+				E856D53B1C0D8284007F2E92 /* Main.storyboard in Resources */,
+				E856D5401C0D8284007F2E92 /* LaunchScreen.xib in Resources */,
+				E856D55D1C0D82F0007F2E92 /* left.png in Resources */,
+				E856D53D1C0D8284007F2E92 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E856D5431C0D8284007F2E92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E856D5281C0D8284007F2E92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E856D5381C0D8284007F2E92 /* ViewController.m in Sources */,
+				E856D5351C0D8284007F2E92 /* AppDelegate.m in Sources */,
+				E856D5611C0D82F0007F2E92 /* TNTStepper.m in Sources */,
+				E856D5321C0D8284007F2E92 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E856D5411C0D8284007F2E92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E856D54C1C0D8284007F2E92 /* TNTStepperDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E856D5471C0D8284007F2E92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E856D52B1C0D8284007F2E92 /* TNTStepperDemo */;
+			targetProxy = E856D5461C0D8284007F2E92 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E856D5391C0D8284007F2E92 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E856D53A1C0D8284007F2E92 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E856D53E1C0D8284007F2E92 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E856D53F1C0D8284007F2E92 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E856D54D1C0D8284007F2E92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E856D54E1C0D8284007F2E92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E856D5501C0D8284007F2E92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TNTStepperDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E856D5511C0D8284007F2E92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TNTStepperDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E856D5531C0D8284007F2E92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TNTStepperDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TNTStepperDemo.app/TNTStepperDemo";
+			};
+			name = Debug;
+		};
+		E856D5541C0D8284007F2E92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TNTStepperDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TNTStepperDemo.app/TNTStepperDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E856D5271C0D8283007F2E92 /* Build configuration list for PBXProject "TNTStepperDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E856D54D1C0D8284007F2E92 /* Debug */,
+				E856D54E1C0D8284007F2E92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E856D54F1C0D8284007F2E92 /* Build configuration list for PBXNativeTarget "TNTStepperDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E856D5501C0D8284007F2E92 /* Debug */,
+				E856D5511C0D8284007F2E92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E856D5521C0D8284007F2E92 /* Build configuration list for PBXNativeTarget "TNTStepperDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E856D5531C0D8284007F2E92 /* Debug */,
+				E856D5541C0D8284007F2E92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E856D5241C0D8283007F2E92 /* Project object */;
+}
